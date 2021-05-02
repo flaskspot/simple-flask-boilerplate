@@ -1,0 +1,4 @@
+{
+    "python.pythonPath": "/home/abhijeet/.local/share/virtualenvs/myapp-T44RpA_i/bin/python",
+    "python.formatting.provider": "black"
+}
