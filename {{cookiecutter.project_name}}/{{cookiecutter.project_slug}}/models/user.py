@@ -1,6 +1,6 @@
 from datetime import datetime
 
-from myapp import db
+from {{cookiecutter.project_slug}} import db
 from werkzeug.security import generate_password_hash
 
 

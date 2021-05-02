@@ -20,12 +20,12 @@ class DevelopmentConfig(Config):
     SECRET_KEY = os.environ.get("SECRET_KEY", secrets.token_urlsafe(32))
     DEBUG = True
     SQLALCHEMY_DATABASE_URI = os.environ.get(
-        "DATABASE_URL", "sqlite:///{}".format(os.path.join(BASEDIR, "myapp.db"))
+        "DATABASE_URL", "sqlite:///{}".format(os.path.join(BASEDIR, "{{cookiecutter.project_slug}}.db"))
     )
 
 
 class TestConfig(Config):
     TESTING = True
     SQLALCHEMY_DATABASE_URI = os.environ.get(
-        "DATABASE_URL", "sqlite:///{}".format(os.path.join(BASEDIR, "myapp.db"))
+        "DATABASE_URL", "sqlite:///{}".format(os.path.join(BASEDIR, "{{cookiecutter.project_slug}}.db"))
     )

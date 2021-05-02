@@ -38,10 +38,10 @@ def create_app(config="myapp.config.ProductionConfig"):
     assets.register("js", js)
 
     # Include All models
-    from myapp.models import User
+    from {{cookiecutter.project_slug}}.models import User
 
     # Import and register Blueprints
-    from myapp.views.main import main
+    from {{cookiecutter.project_slug}}.views.main import main
 
     app.register_blueprint(main)
 
