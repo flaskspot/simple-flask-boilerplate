@@ -1,4 +1,4 @@
 #!/bin/bash
 
-echo "\nInstalling dependencies"
+echo "Installing dependencies"
 npm install --save postcss postcss-cli

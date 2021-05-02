@@ -8,13 +8,11 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "devDependencies": {
+  "dependencies": {
+    "@fullhuman/postcss-purgecss": "^4.0.3",
     "autoprefixer": "^10.2.5",
     "postcss": "^8.2.13",
     "postcss-cli": "^8.3.1",
     "tailwindcss": "^2.1.2"
-  },
-  "dependencies": {
-    "@fullhuman/postcss-purgecss": "^4.0.3"
   }
 }
