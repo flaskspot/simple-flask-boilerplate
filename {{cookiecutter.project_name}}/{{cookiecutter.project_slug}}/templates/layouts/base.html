@@ -6,13 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% if title %} {{ title }} {% else %} myapp {% endif %}</title>
+    <!-- You can remove this -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
-
-    {% assets 'css' %}
-    <link rel="stylesheet" href="{{ ASSET_URL }}">
-    {% endassets %}
-
     <style>
         * {
             font-family: 'Inter', sans-serif;
@@ -24,11 +22,6 @@
 <body>
     {% block content %}
     {% endblock %}
-
-    <!-- scripts -->
-    {% assets 'js' %}
-    <script src="{{ ASSET_URL }}"></script>
-    {% endassets %}
 </body>
 
 </html>
