@@ -1,1 +1,1 @@
-# MyApp
+# {{cookiecutter.project_name}}

@@ -6,8 +6,6 @@ help:
 	@echo "run - starts flask application"
 	@echo "dbinit - initialize database migrations"
 	@echo "dbup - database upgrade (db upgrade)"
-	@echo "build-assets - builds css/js assets"
-	@echo "watch-assets - build css/js assets in watch mode"
 	@echo "clean - remove all build, test, coverage and Python artifacts"
 	@echo "clean-build - remove build artifacts"
 	@echo "clean-pyc - remove Python file artifacts"
@@ -35,13 +33,6 @@ dbinit:
 dbup:
 	python3 manage.py db upgrade
 
-
-## Assets
-build-assets:
-	python3 manage.py assets build
-
-watch-assets:
-	python3 manage.py assets watch
 
 
 ## Cleaning 
