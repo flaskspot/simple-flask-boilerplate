@@ -21,14 +21,14 @@ install:
 
 ## Run flask app
 run:
-	python3 manage.py runserver
+	flask run
 
 
 ## DB Management
 dbinit:
-	python3 manage.py db init
+	flask db init
 dbup:
-	python3 manage.py db upgrade
+	flask db upgrade
 
 
 
