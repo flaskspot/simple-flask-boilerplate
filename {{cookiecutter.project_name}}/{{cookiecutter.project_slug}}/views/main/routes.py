@@ -5,6 +5,6 @@ main = Blueprint("main", __name__)
 
 @main.route("/")
 def index():
-    return render_template("main/index.html", title="Welcome to FlaskSpot")
+    return render_template("main/index.html")
 
 # Add your routes here
