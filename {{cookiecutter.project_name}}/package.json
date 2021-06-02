@@ -3,9 +3,8 @@
   "version": "1.0.0",
   "description": "## Getting Started",
   "scripts": {
-    "dev": "postcss app/static/src/css/tailwind.css -o app/static/build/css/app.css",
-    "build": "NODE_ENV=production postcss app/static/src/css/tailwind.css -o app/static/build/css/app.css",
-    "watch": "postcss -w app/static/src/css/tailwind.css -o app/static/build/css/app.css"
+    "dev": "postcss {{ cookiecutter.project_slug }}/static/src/css/tailwind.css -o {{ cookiecutter.project_slug }}/static/build/css/app.css",
+    "build": "NODE_ENV=production postcss {{ cookiecutter.project_slug }}/static/src/css/tailwind.css -o {{ cookiecutter.project_slug }}/static/build/css/app.css"
   },
   "author": "",
   "license": "ISC",
