@@ -29,6 +29,11 @@ def create_app(config="myapp.config.ProductionConfig"):
     # Include All models
     from {{cookiecutter.project_slug}}.models import User
 
+    # Register Error Pages
+    from {{cookiecutter.project_slug}}.views.error_pages import error_404, error_500
+    app.register_error_handler(404, error_404)
+    app.register_error_handler(500, error_500)
+
     # Import and register Blueprints
     from {{cookiecutter.project_slug}}.views.main import main
 
