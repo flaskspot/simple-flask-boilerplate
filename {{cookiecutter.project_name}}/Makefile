@@ -17,6 +17,8 @@ help:
 install:
 	@echo "\nInstalling project dependencies from requirements.txt\n"
 	pip install -r requirements.txt
+	@echo "\nInstall npm packages"
+	npm install
 
 
 ## Run flask app
